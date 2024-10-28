@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import reactLogo from '@/assets/react.svg';
 import viteLogo from '/vite.svg'
-import './App.css'
-import './assets/css/main.css'
-import Navbar from './components/Navbar';
+import '@/App.css'
+import '@/assets/css/main.css'
+import Navbar from '@/components/Navbar';
 
-function HomePage() {
+function Home() {
   const [count, setCount] = useState(0)
 
   return (
@@ -35,4 +35,4 @@ function HomePage() {
   )
 }
 
-export default HomePage
+export default Home
