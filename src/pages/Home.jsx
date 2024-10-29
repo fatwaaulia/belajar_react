@@ -14,17 +14,9 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="row mt-3">
-					{
-						nama_orang.map(nama => (
-							<div className="col-12 col-md-6 col-lg-4 col-xl-3" key={ nama }>
-								<div className="card">
-									<div className="card-body">
-										<h1>{ nama }</h1>
-									</div>
-								</div>
-							</div>
-						))
-					}
+					<div className="col-12">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat amet vero molestiae enim laboriosam, inventore, quisquam iste impedit error aliquid optio cum. A facere molestias earum commodi? Perspiciatis, iste expedita.
+					</div>
 				</div>
 			</div>
 			<Footer />

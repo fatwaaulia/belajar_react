@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
+import '@/assets/css/navbar.css';
 
 export default function Navbar() {
+    function active(to = '/') {
+        let current_url = window.location.pathname;
+        if (current_url == to) return 'active';
+    }
+    
     return (
         <nav className="navbar navbar-expand-lg bg-dark-subtle">
             <div className="container">
@@ -11,13 +17,10 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/">Home</Link>
+                            <Link className={`nav-link ${ active('/') } `} to="/">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/tentang-kami">Tentang Kami</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/berita">Berita</Link>
+                            <Link className={`nav-link ${ active('/tentang-kami') } `} to="/tentang-kami">Tentang Kami</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
